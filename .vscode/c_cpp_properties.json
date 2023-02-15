@@ -1,0 +1,25 @@
+{
+  "env": {
+    "myDefaultIncludePath": ["${workspaceFolder}"],
+    "myCompilerPath": "/usr/local/bin/clang++"
+  },
+  "configurations": [
+    {
+      "name": "Linux",
+      "intelliSenseMode": "clang-x64",
+      "includePath": ["${myDefaultIncludePath}"],
+      "defines": ["FOO", "BAR=100"],
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "c17",
+      "cppStandard": "c++23",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+      "browse": {
+        "path": ["${workspaceFolder}"],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "configurationProvider": "ms-vscode.cmake-tools"
+    }
+  ],
+  "version": 4
+}
